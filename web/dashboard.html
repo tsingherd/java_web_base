@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>优米课堂</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap-flat.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="css/metisMenu.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img alt="umiclass" src="img/umiclass-logo.png" height="52" width="auto"/></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="sidebar-search">
+                    <form class="navbar-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+                    <!-- /input-group -->
+                </li>
+                <!-- 消息 -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>John Smith</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                </div>
+                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>阅读所有消息</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <!-- 任务 -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-tasks fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 1</strong>
+                                        <span class="pull-right text-muted">40% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 2</strong>
+                                        <span class="pull-right text-muted">20% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                            <span class="sr-only">20% Complete</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 3</strong>
+                                        <span class="pull-right text-muted">60% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Task 4</strong>
+                                        <span class="pull-right text-muted">80% Complete</span>
+                                    </p>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                            <span class="sr-only">80% Complete (danger)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>查看所有任务</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>查看所有通知</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#" data-toggle="modal" data-target="#message"><i class="fa fa-user fa-fw"></i> 个人信息</a>
+                        </li>
+                        <li><a href="#"data-toggle="modal" data-target="#setting"><i class="fa fa-gear fa-fw"></i> 设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html" onclick="logout()"><i class="fa fa-sign-out fa-fw"></i> 退出登录</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav">
+                        <li>
+                            <div class="text-center">
+                                <a href="#"><img src="img/user-avatar.jpg" class="img-circle user-avatar"/></a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="dashboard.html">
+                                <div class="text-center"><i class="fa fa-dashboard fa-3x"></i></div>
+                                <div class="text-center">课程首页</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="new_test.html">
+                                <div class="text-center"><i class="fa fa-edit fa-3x"></i></div>
+                                <div class="text-center">组卷测验</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="student_list.html">
+                                <div class="text-center"><i class="fa fa-table fa-3x"></i></div>
+                                <div class="text-center">学生名单</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="test_management.html">
+                                <div class="text-center"><i class="fa fa-files-o fa-3x"></i></div>
+                                <div class="text-center">测验管理</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="course_management.html">
+                                <div class="text-center"><i class="fa fa-th fa-3x"></i></div>
+                                <div class="text-center">课程管理</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="question_base_management.html">
+                                <div class="text-center"><i class="fa fa-sitemap fa-4x"></i></div>
+                                <div class="text-center">题库管理</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">C语言程序设计</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> 课程信息
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <h4>课程简介</h4>
+                            <p>C语言是一种计算机程序设计语言。它既有高级语言的特点，又具有汇编语言的特点。它可以作为系统设计语言，
+                                编写工作系统应用程序，也可以作为应用程序设计语言，编写不依赖计算机硬件的应用程序。因此，它的应用
+                                范围广泛。</p>
+                            <table class="table table-bordered table-responsive">
+                                <tr>
+                                    <td>上课时间：</td>
+                                    <td>1-16周 周一 7-9节</td>
+                                    <td>上课地点：</td>
+                                    <td>教5-102</td>
+                                </tr>
+                                <tr>
+                                    <td>选用教材：</td>
+                                    <td>《C语言程序设计》</td>
+                                    <td>考试形式：</td>
+                                    <td>16周 闭卷</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- 通知区 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> 课程通知
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                </span>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                </span>
+                            </a>
+                        </div>
+                        <!-- /.list-group -->
+                    </div>
+                    <!-- 测验记录 -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> 最近测验
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第七次测验</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第六次测验</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, Animi officiis alias, officia repellendus.</p>
+
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第五次测验</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, concilis enimmilique nihil iure molestias aliquamodi quisquam.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge danger"><i class="fa fa-star"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第四次测验</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetero, omnis ut debitis!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第二次测验</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amemolestiae exceptm deb ique.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">第一次测验</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, csecteturnimiuisquam maxime neque eaque.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                    <!-- chating区 -->
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i>
+                            学生留言
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="img/user-avatar.jpg" alt="User Avatar" class="img-circle user-avatar" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="img/user-avatar.jpg" alt="User Avatar" class="img-circle user-avatar" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="img/user-avatar.jpg" alt="User Avatar" class="img-circle user-avatar" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="img/user-avatar.jpg" alt="User Avatar" class="img-circle user-avatar" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" style="position:absolute;z-index:9999" id="setting" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        设置
+                    </h4>
+                </div><form class="form-horizontal" action="" method="post">
+                <div class="modal-body">
+                    <ul id="mysettingTab" class="nav nav-tabs">
+                        <li class="active">
+                            <a href="#pwdsetting" data-toggle="tab">
+                                密码修改
+                            </a>
+                        </li>
+                        <li><a href="#infosetting" data-toggle="tab">个人信息修改</a></li>
+                        <li><a href="#cancellation" data-toggle="tab">注销账号</a></li>
+                    </ul>
+                    <div id="mysettingTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="pwdsetting">
+                            <div class="form-group"><label  class="col-lg-4 control-label">旧密码：</label>
+                                <div class="col-lg-5">
+                                    <input type="text" id="oldpassword" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group"><label  class="col-lg-4 control-label">新密码：</label>
+                                <div class="col-lg-5">
+                                    <input type="text" id="newpassword" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="form-group"><label  class="col-lg-4 control-label">确认密码：</label>
+                                <div class="col-lg-5">
+                                    <input type="text" id="againpassword" class="form-control"/>
+                                </div>
+                            </div>
+                        </div><div class="tab-pane fade" id="infosetting">
+                        <div class="form-group"><label class="col-lg-4 control-label">姓名：</label>
+                            <div class="col-lg-6">
+                                <input type="text" id="teacherName" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-4 control-label">手机：</label>
+                            <div class="col-lg-6">
+                                <input type="text" id="phone" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="form-group"><label class="col-lg-4 control-label">邮箱：</label>
+                            <div class="col-lg-6">
+                                <input type="text" id="email" class="form-control"/>
+                            </div>
+                        </div><div class="form-group"><label class="col-lg-4 control-label">学校：</label>
+                        <div class="col-lg-6">
+                            <input type="text" id="school" class="form-control"/>
+                        </div>
+                    </div><div class="form-group"><label class="col-lg-4 control-label">院系：</label>
+                        <div class="col-lg-6">
+                            <input type="text" id="department" class="form-control"/>
+                        </div>
+                    </div><div class="form-group"><label class="col-lg-4 control-label">专业：</label>
+                        <div class="col-lg-6">
+                            <input type="text" id="major" class="form-control"/>
+                        </div></div>
+                        <div class="form-group"><label class="col-lg-4 control-label">信息：</label>
+                            <div class="col-lg-6">
+                                <input type="text" id="info" class="form-control"/>
+                            </div></div>
+                    </div>
+                        <div class="tab-pane fade" id="cancellation">
+                            <p style="text-align: center"></p>请输入您的密码，确认注销账号</p>
+                            <div class="form-group"><div class="col-lg-6">
+                                <input class="form-control"  name="password" type="password">
+                            </div></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"
+                                    data-dismiss="modal">关闭
+                            </button>
+                            <button type="button" class="btn btn-default">
+                                提交更改
+                            </button></div>
+
+                    </div>
+
+                </div></form>
+            </div><!-- /.modal-content --></div></div><div class="modal fade" style="position:absolute;z-index:9999" id="message" tabindex="-1" role="dialog"
+                                                           aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="teacher">
+                        个人信息
+                    </h4>
+                </div><form class="form-horizontal" action="" method="post">
+                <div class="modal-body">
+
+
+                    <ul>
+                        <li style="list-style-type: none">姓名：</li>
+                        <li style="list-style-type: none">手机：</li>
+                        <li style="list-style-type: none">邮箱：</li>
+                        <li style="list-style-type: none">学校：</li>
+                        <li style="list-style-type: none" >院系：</li>
+                        <li style="list-style-type: none">专业：</li>
+                        <li style="list-style-type: none" >信息：</li>
+                    </ul>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default"
+                                data-dismiss="modal">关闭
+                        </button>
+
+                    </div></div></form>
+            </div><!-- /.modal-content -->
+        </div></div>
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/metisMenu.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+    <script language=JavaScript>
+        function logout(){
+            if (confirm("您确定要退出吗？"))
+                top.location = "login.html";
+            return false;
+        }
+    </script>
+</body>
+
+</html>
