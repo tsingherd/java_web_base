@@ -14,10 +14,51 @@
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
 
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView"/>
+    <!--<bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">-->
+        <!--<property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView"/>-->
+        <!--<property name="prefix" value="/"/>-->
+        <!--<property name="suffix" value=".html"/>-->
+    <!--</bean>-->
+
+    <bean id="velocityConfigurer" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath">
+            <value>/views/</value>
+        </property>
+        <property name="velocityProperties">
+            <props>
+                <prop key="directive.foreach.counter.name">velocityCount</prop>
+                <prop key="directive.foreach.counter.initial.value">1</prop>
+                <prop key="input.encoding">UTF-8</prop>
+                <prop key="output.encoding">UTF-8</prop>
+                <prop key="contentType">text/html;charset=UTF-8</prop>
+                <prop key="velocimacro.library">/macros/macros.vm</prop>
+                <prop key="tools.view.servlet.error.template">error.vm</prop>
+                <!-- <prop key="eventhandler.referenceinsertion.class">com.taobao.security.handler.XSSEncoderEventHandler</prop> -->
+            </props>
+        </property>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityLayoutViewResolver">
+        <!-- 视图文件的前缀，即存放的路径 -->
         <property name="prefix" value="/"/>
-        <property name="suffix" value=".html"/>
+        <!-- 视图文件的后缀名 -->
+        <property name="suffix" value=".vm"/>
+        <!-- 编码 -->
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <!--是否使用spring对宏定义的支持-->
+        <property name="exposeSpringMacroHelpers" value="true"/>
+        <!--是否开放request属性-->
+        <property name="exposeRequestAttributes" value="true"/>
+        <!--request属性引用名称-->
+        <property name="requestContextAttribute" value="rc"/>
+        <!--指定默认layout文件-->
+        <property name="layoutUrl" value="layout/view.vm"/>
+        <!--toolbox配置文件路径-->
+        <property name="toolboxConfigLocation" value="/WEB-INF/toolbox.xml"/>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="104857600" />
     </bean>
 
 </beans>
